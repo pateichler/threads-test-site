@@ -26,7 +26,7 @@ jobs:
         run: npm install -g @pateichler/threads
 
       - name: Compile
-        run: threads compile --input src/ --output dist/ --base /${{ github.event.repository.name }}/
+        run: threads compile --input src/ --output dist/ --base /${{ github.event.repository.name }}/ --index Home
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
